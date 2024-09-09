@@ -38,6 +38,24 @@
         "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/riskmanagement\\\",\\\"profileName\\\":\\\"\\\"}\"}",
         "runConfigurations": "{\"odataBinding\":{\"ZAPI_BUSINESS_PARTNER\":{\"destination\":\"HST100\",\"type\":\"Destination\",\"path\":\"https://PRL-HS1-PAS01.PEARLCONSULTING.NO:44300/sap/opu/odata/sap/API_BUSINESS_PARTNER\"}}}"
       }
+    },
+    {
+      "name": "Run RiskManagement-Mobile",
+      "runtimeExecutable": "cds",
+      "request": "launch",
+      "args": [
+        "watch",
+        "--open"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "type": "node",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "dev-project",
+      "envFile": "${workspaceFolder}/env/.env3",
+      "env": {
+        "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/riskmanagement\\\",\\\"profileName\\\":\\\"\\\"}\"}"
+      }
     }
   ]
 }
